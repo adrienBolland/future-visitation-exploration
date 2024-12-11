@@ -1,0 +1,25 @@
+gamma_policy: 0.98
+gamma_state_dist: 0.98
+policy_layers: [256, 256]
+visitation_layers: [256, 256, 256, 256]
+critic_layers: [256, 256]
+lr_policy: 0.00001
+lr_critic: 0.0001
+lr_state_distribution: 0.00001
+alpha_reward: 1.
+alpha_sac: 0.002
+alpha_infty: 0.01
+buffer_max_size: 1000
+nb_iteration: 500000
+nb_transitions_per_step: 1
+batch_size: 32
+nb_offline_visitation_updates: 1
+nb_offline_critic_updates: 1
+target_tau_visitation: 1.
+target_tau_critic: 0.1
+bootstrap_horizon: 10
+bool_reward_scale: false
+bool_actor_scale: true
+trajectory_control_len: 200
+time_limit: 200
+density_plot_period: -1
